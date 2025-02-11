@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="css/widgets.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/middle.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="main">
+            <div class="logo"><img src="photos/logo.png" alt="logo"></div>
+            <div class="dropdowns">
+                <div id="home" onmouseover="showdropdown('content1');" onmousedown="hidedropdown('content1');"><span>Home</span><i class="fa-solid fa-angle-down fa-2xs"></i></div>
+                <div class="camera" id="cam" onmouseover="showdropdown('content1');" onmousedown="hidedropdown('content1');"><span>Camera</span><i class="fa-solid fa-angle-down fa-2xs"></i></div>
+                <div class="headphones" id="head" onmouseover="showdropdown('content2');" onmousedown="hidedropdown('content2');"><span>Headphones</span><i class="fa-solid fa-angle-down fa-2xs"></i></div>
+                <div class="laptops"><span>Laptops</span><i class="fa-solid fa-angle-down fa-2xs"></i></div>
+                <div class="smartphone"><span>Smartphone</span></div>
+            </div> 
+            <div class="right">
+                <div class="fav"><i class="fa-regular fa-heart fa-2xl" style="color: #000000;"></i></div>
+                <div class="login">
+                    <div class="user"><i class="fa-regular fa-user fa-2xl" style="color: #000000;"></i></div>
+                    <div class="info">
+                        <p style="font-size: 12px; color: #848484;">My Account</p>
+                        <p style="font-size: 15px;"><b>Login</b></p>
+                    </div>
+                </div>
+                <div class="basket">
+                    <div class="cart"><i class="fa-solid fa-cart-shopping fa-2xl" style="color: #000000;"></i></div>
+                    <div class="info">
+                        <p style="font-size: 12px; color: #848484;">My Cart</p>
+                        <p style="font-size: 15px;"><b>$0.00</b></p>
+                    </div>
+                </div>
+            </div>     
+        </div>
+        <div class="contents">
+            <div id="content1">
+                <ul class="homepage">
+                    <p>Homepage</p><br>
+                    <li><a href="">Home 01</a></li>
+                    <li><a href="">Home 02</a></li>
+                    <li><a href="">Home 03</a></li>
+                    <li><a href="">Home 04</a></li>
+                    <li><a href="">Home 05</a></li>
+                    <li><a href="">Home 06</a></li>
+                </ul>
+                <ul class="shoplayouts">
+                    <p>Shop Layouts</p><br>
+                    <li><a href="">Shop Top Categories</a></li>
+                    <li><a href="">Shop Top Brands</a></li>
+                    <li><a href="">Shop List</a></li>
+                    <li><a href="">Shop Scroll Sidebar</a></li>
+                    <li><a href="">Shop Top Filter</a></li>
+                    <li><a href="">Shop Load More Button</a></li>
+                    <li><a href="">Shop Infinity Scroll</a></li>
+                    <li><a href="">Shop Ajax Pagination</a></li>
+                </ul>
+                <ul class="productlayouts">
+                    <p>Product Layouts</p><br>
+                    <li><a href="">Horizontal Thumbnails</a></li>
+                    <li><a href="">Vertical Thumbnails</a></li>
+                    <li><a href="">Grid Thumbnails</a></li>
+                    <li><a href="">Variation Thumbnails</a></li>
+                    <li><a href="">Variation Dropdown</a></li>
+                    <li><a href="">Product Deal</a></li>
+                    <li><a href="">Group Products</a></li>
+                    <li><a href="">Product Video</a></li>
+                </ul>
+                <ul>
+                    <p>Others</p><br>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Blog Detail</a></li>
+                    <li><a href="">Track Order</a></li>
+                    <li><a href="">Flash Sale</a></li>
+                    <li><a href="">Coming Soon</a></li>
+                    <li><a href="">404</a></li>
+                </ul>
+            </div> 
+        </div>
+        <div class="contents">
+            <div id="content2">
+                <ul class="homepage">
+                    <p>Homepage</p><br>
+                    <li><a href="">Home 01</a></li>
+                    <li><a href="">Home 02</a></li>
+                    <li><a href="">Home 03</a></li>
+                    <li><a href="">Home 04</a></li>
+                    <li><a href="">Home 05</a></li>
+                    <li><a href="">Home 06</a></li>
+                </ul>
+                <ul class="shoplayouts">
+                    <p>Shop Layouts</p><br>
+                    <li><a href="">Shop Top Categories</a></li>
+                    <li><a href="">Shop Top Brands</a></li>
+                    <li><a href="">Shop List</a></li>
+                    <li><a href="">Shop Scroll Sidebar</a></li>
+                    <li><a href="">Shop Top Filter</a></li>
+                    <li><a href="">Shop Load More Button</a></li>
+                    <li><a href="">Shop Infinity Scroll</a></li>
+                    <li><a href="">Shop Ajax Pagination</a></li>
+                </ul>
+                <img src="photos/clock.jpg" alt="">                
+            </div> 
+        </div>
+    </div>
+    <div class="middle">
+        <div class="left">
+            <div class="btn-grp">
+                <button type="button" id="first"><i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"><span>Shop Categories</span></i></button>
+                <button type="button"><i class="fa-solid fa-mobile-screen-button fa-xl" style="color: #000000;"></i><span>Smartphone</span></button>
+                <div class="leftdr">
+                    <button type="button" class="droplft"><i class="fa-solid fa-laptop fa-xl" style="color: #000000;"></i><span>Laptops</span></button>
+                    <ul class="dropleft">
+                        <li>Laptops</li>
+                        <li>Laptops</li>
+                        <li>Laptops</li>
+                        <li>Laptops</li>
+                        <li>Laptops</li>
+                        <li>Laptops</li>
+                        <li>Laptops</li>
+                        <li>Laptops</li>
+                    </ul>
+                </div>
+                <button type="button"><i class="fa-solid fa-tv fa-xl" style="color: #000000;"></i><span>Television</span></button>
+                <button type="button"><i class="fa-solid fa-tv fa-xl" style="color: #000000;"></i><span>Television</span></button>
+                <button type="button"><i class="fa-solid fa-tv fa-xl" style="color: #000000;"></i><span>Television</span></button>
+                <button type="button"><i class="fa-solid fa-tv fa-xl" style="color: #000000;"></i><span>Television</span></button>
+                <button type="button"><i class="fa-solid fa-tv fa-xl" style="color: #000000;"></i><span>Television</span></button>
+                <button type="button"><i class="fa-solid fa-tv fa-xl" style="color: #000000;"></i><span>Television</span></button>
+                <button type="button"><i class="fa-solid fa-tv fa-xl" style="color: #000000;"></i><span>Television</span></button>
+                <button type="button"><i class="fa-solid fa-tv fa-xl" style="color: #000000;"></i><span>Television</span></button>
+                <button type="button" id="last"><i class="fa-solid fa-tv fa-xl" style="color: #000000;"></i><span>Television</span></button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="up">
+                <div class="butt">
+                    <button type="button"><i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i></button>
+                </div>
+                <div class="button-group">
+                    <div class="drop">
+                        <button type="button" onclick="mouseclick()" ondblclick="mouseclick2()" id="dropbtn"><span>All Categories</span><i class="fa-solid fa-angle-down fa-2xs"></i></button>
+                        <div class="dropdown-cat">
+                            <div id="myDropdown">
+                                <p>Camera</p>
+                                <p>Games</p>
+                                <p>Headphones</p>
+                                <p>Headphones</p>
+                                <p>Headphones</p>
+                                <p>Headphones</p>
+                                <p>Headphones</p>
+                                <p>Headphones</p>
+                                <p>Headphones</p>
+                                <p>Headphones</p>   
+                                <p>Headphones</p>
+                                <p>Headphones</p>
+                                <p>Headphones</p>                             
+                                <p>Headphones</p>
+                                <p>Headphones</p>
+                                <p>Headphones</p>
+                                <p>Headphones</p>
+                                <p>Headphones</p>
+                                <p>Headphones</p>
+                                <p>Headphones</p>
+                                <p>Headphones</p>
+                                <p>Headphones</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="search-area" action="">
+                        <input type="text" placeholder="Search for products" name="search">
+                        <button type="submit"><span>SEARCH</span><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div><br>
+            <div class="down">
+                <div class="texts">
+                    <p>UP TO 35% OFF</p><br>
+                    <h3>12th Gen Core Alder Lake</h3><br>
+                    <p>FROM $409.99</p><br>
+                    <button type="button">SHOP NOW</button>
+                </div>
+                <img src="photos/slide4-laptop.jpg" alt="">
+                <img src="photos/banner-27.jpg" alt="" id="last">
+            </div>
+        </div>
+    </div>
+    <div class="widgets">
+        <div class="out">
+            <img src="photos/s-phone.jpeg" alt="phone">
+            <div class="txt">
+                <button>BIG SALE</button><br><br>
+                <h2>Top Smartphone</h2><br>
+                <h3>TODAY'S SUPER OFFER</h3>
+            </div>
+        </div>
+        <div class="out">
+            <img src="photos/s-phone.jpeg" alt="phone">
+            <div class="txt">
+                <button>BIG SALE</button><br><br>
+                <h2>Top Smartphone</h2><br>
+                <h3>TODAY'S SUPER OFFER</h3>
+            </div>
+        </div> 
+        <div class="out">
+            <img src="photos/s-phone.jpeg" alt="phone">
+            <div class="txt">
+                <button>BIG SALE</button><br><br>
+                <h2>Top Smartphone</h2><br>
+                <h3>TODAY'S SUPER OFFER</h3>
+            </div>
+        </div>
+    </div><br><br>
+    <div class="widget2">
+        <div class="out">
+            <img src="photos/e-phone.jpeg" alt="">
+            <div class="txt">
+                <button>BIG SALE</button><br>
+                <h2>Top Smartphone</h2>
+                <h3>TODAY'S SUPER OFFER</h3>
+            </div>
+        </div>
+        <div class="out">
+            <img src="photos/e-phone.jpeg" alt="">
+            <div class="txt">
+                <button>BIG SALE</button><br>
+                <h2>Top Smartphone</h2>
+                <h3>TODAY'S SUPER OFFER</h3>
+            </div>
+        </div>
+        <div class="out">
+            <img src="photos/e-phone.jpeg" alt="">
+            <div class="txt">
+                <button>BIG SALE</button><br>
+                <h2>Top Smartphone</h2>
+                <h3>TODAY'S SUPER OFFER</h3>
+            </div>
+        </div>
+    </div> 
+    <script src="js/navbar.js"></script>
+    <script src="js/middle-right.js"></script>
+    <script src="https://kit.fontawesome.com/cc87c2e5ee.js" crossorigin="anonymous"></script>
+</body>
+</html>

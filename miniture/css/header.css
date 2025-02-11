@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    padding: 0 25px;
+    .top{
+        height: 56px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left, .right{
+            display: flex;
+            height: auto;
+            gap: 60%;
+            :hover{
+                color: orange;
+                cursor: pointer;
+            }
+       
+        }
+        #heart{
+            display: none;
+            
+        }
+        .logo{
+            font-size: 17px;
+        }
+
+    }
+    .buttom{
+        height: 70px;
+        display: none;
+        align-content: center;
+        align-items: center;
+        padding: 0 31%;
+        top: 80px;
+        :hover{
+            color: orange;
+            cursor: pointer;
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            li a{
+                text-decoration: none;
+                font-family: sans-serif;
+                color: #181818;
+
+            }
+        }
+    }
+    .widgets{
+        display: flex;
+        flex-direction: column;
+        
+        /*!!!*/
+        #widget{
+            
+        }
+        img{
+            border-radius: 3%;
+            object-fit: cover;
+        }
+        .text{
+            p.up, h2{
+                text-align: center;
+            }
+            h2{
+                font-size: 36px;
+                font-weight: 700;
+                font-family: Outfit,serif;
+                overflow-wrap: break-word;
+
+            }
+
+            .button{
+                display: block;
+                background-color: orange;
+                font-size: 18px;
+                padding: 20px 40px;
+                border: none;
+                border-radius: 50px;
+                font-family: sans-serif;
+                color: white;
+                margin: auto;
+                /*
+                :hover{
+                    cursor: pointer;
+                    background-color: black
+                }
+                    (belə düzgün işləmədi,,,)
+                */
+
+            }
+
+            button:hover{
+                cursor: pointer;
+                background-color: black;
+            }
+            
+
+        }
+    }
+
+}
+@media only screen and (min-width: 772px){
+    header{
+        padding: 0px 40px;
+        .top{
+            height: 80px;
+            .logo{
+                font-size: 26px;
+            }
+        }
+        .right #heart{
+            display: block;
+        }
+        .widgets{
+            margin-top: 19px;
+            .text h2{
+                font-size: 48px;
+                
+            }
+        }
+    }
+
+}
+@media only screen and (min-width: 1024px){
+    header{
+        padding: 0px 100px;
+        .top .left #menu{
+            display: none;
+        }
+        .buttom{
+            display: block;
+        }
+        /*
+        .buttom{
+            display: block;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            height: 70px;
+
+        }
+        */
+        .widgets{
+            flex-flow: row;
+            justify-content: space-around;
+            gap: 5%;
+            margin-top: 0;
+            .widget{
+                img{
+                    width: 50%;
+                }
+            }
+            .text{
+                width: 80%;
+                align-items: center;
+                align-content: center;
+                p.up{
+                    text-align: start;
+                }
+                p, h2, .button{
+                    text-align: start;
+                }
+                h2{
+                    font-size: 60px;
+                }
+                .button{
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

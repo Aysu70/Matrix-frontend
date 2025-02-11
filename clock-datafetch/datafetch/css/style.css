@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 7%;
+    div{
+        width: 28%;
+        padding: 2%;
+        background-color: rgb(243, 255, 188);
+        margin: 2%;
+        border-radius: 4px;
+        .image{
+            border-radius: 4px;
+            background-color: white;
+        }
+        .bottom{
+            background-color: rgb(98, 37, 205);
+        }
+        .title{
+            font-weight: bolder;
+            font-size: larger;
+        }
+        .desc{
+            word-break:normal;
+            font-size: medium;
+        }
+        .price{
+            color: red;
+            font-size: large;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.img{
+    background-image: url(../../Sandbox/photos/clipboard.jpeg);
+    width: 200px;
+    height: 200px;
+    
+}
+
+.img2{
+    background-image: url(../../Sandbox/photos/different-1.jpg);
+    width: 200px;
+    height: 200px;
+}
+
+.btn{
+    padding: 7px;
+}
