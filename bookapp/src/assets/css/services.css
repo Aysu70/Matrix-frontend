@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outter-services{
+    width: 100%;
+    .services{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        .title{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            .left{
+                width: 65%;
+            }
+            .right{
+                width: 35%;
+                .cost{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 5px;
+                }
+                .rev{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 5px;
+                    img{
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+        .desc-1{
+
+        }
+        .desc-2{
+            ul li::marker{
+                color: #ff0037;
+            }
+            ul li span{
+                color: #747474;
+            }
+        }
+        .features{
+            width: 100%;
+            ol li{
+                list-style-image:url('../photos/check_box_24dp_FF0037_FILL0_wght400_GRAD0_opsz24.svg');
+            }
+            ol{
+                color: #747474;
+                display: flex;
+                flex-direction: row;
+                justify-content:space-between;
+                width: 70%;
+            }
+        }
+        .booknow{
+            width: 90%;
+            border: 1px lightgray solid;
+            border-radius: 7px;
+            display: flex;
+            flex-direction: row;
+            padding: 16px 16px 0;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            .question{
+                width: 40%;
+                padding: 0 12px;
+            }
+            .loc{
+                width: 35%;
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                gap: 8px;
+                padding: 0 12px;
+                button{
+                    width: 40px;
+                    height: 40px;
+                    background-color: transparent;
+                    border-radius: 7px;
+                    border: 1px lightgray solid;
+                }
+                .yourloc{
+                    select{
+                        width: 200%;
+                        border: none;
+                        color: #747474;
+                    }
+                }
+            }
+            .book{
+                width: 25%;
+                padding: 0 12px;
+                button{
+                    width: 100%;
+                    padding: 14px 35px;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 7px;
+                    justify-content: center;
+                    align-items: center;
+                    border: none;
+                    border-radius: 7px;
+                    background-color: #ff0037;
+                    transition: 0.2 ease-in-out;
+                    p{
+                        color: white;
+                    }
+                    box-shadow: 6px 6px 11px 0px #ff003757;
+                }
+                button:hover{
+                    position: relative;
+                    top: -4px;
+                }
+            }
+        }
+    }
+}

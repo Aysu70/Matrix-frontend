@@ -1,0 +1,106 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transition: all 0.3s;
+    .top-nav{
+        width: 100%;
+        background-color: $headerbackgorung;
+        height: 9vh;
+        @include row-center();
+        .container{
+            display: flex;
+            width: 75%;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 4px 0;
+            p{
+                text-align: center;
+                font-size: 14px;
+            }
+        }
+    }
+    .bottom-nav{
+        // position: sticky;
+        // top: 0;
+        width: 100%;
+        @include row-center();
+        background-color: white;
+        .container{
+            width: 75%;
+            @include jc-sb-ac-c();
+            ul{
+                @include row-center();
+                list-style: none;
+                li{
+                    font-weight: bold;
+                    padding: 19px;
+                    text-align: center;
+                    a{
+                        transition: all 0.3s;
+                        text-decoration: none !important;
+                        color: black;
+                    }
+                    a:hover{
+                        color: $blue;
+                    }
+                }
+            }
+            .right{
+                @include row-center();
+                gap: 4px;
+                button{
+                    padding: 3px;
+                    border: none;
+                    background-color: transparent;
+                    svg{
+                        width: 15px;
+                        height: auto;
+                    }
+                }
+            }
+            .active{
+                color: $blue;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 960px ) {
+    .header{
+        .top-nav{
+            .container{
+                flex-direction: column;
+                p{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 520px ) {
+    .header{
+        .bottom-nav{
+            .container{
+                width: 90%;
+                .logo img{
+                    width: 70px;
+                    height: auto;
+                }
+                ul li{
+                    font-size: 12px;
+                }
+                .right{
+                    button{
+                        padding: 0px;
+                        svg{
+                            width: 10px;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

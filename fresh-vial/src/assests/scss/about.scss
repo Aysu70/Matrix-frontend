@@ -1,0 +1,30 @@
+.About{
+    width: 100%;
+    @include row-center();
+    .container{
+        width: 100%;
+        @include row-center();
+        flex-direction: column;
+        text-align: center;
+        h1{
+            color: $blue;
+            font-size: 28px;
+        }
+        p{
+            width: 60%;
+            padding: 20px 0;
+            font-style: 16px;
+        }
+        img{
+            padding-bottom: 20px;
+            object-fit: contain;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .About img{
+        width: 70% !important;
+        height: auto !important;
+    }
+}

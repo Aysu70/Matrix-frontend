@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    width: 100%;
+    .top{
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        height: 84px;
+        justify-self: center;
+        align-items: center;
+        background-color: white;
+        .logo{
+            width: 12%;
+        }
+        .dropdown{
+            width: 75%;
+            ol{
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                li{
+                    display: flex;
+                    flex-direction: row;
+                    padding: 30px 8px;
+                    gap: 4px;
+                    p{
+                        color: black;
+                        font-size: 16px;
+                        padding: 30px 8px;
+                    }     
+                    p{
+                        transition: 0.3s ease-in;
+                    }           
+                }
+                li:hover{
+                    p{
+                        color: #ff0037;
+                    }
+                    p:nth-child(2){
+                        rotate: 90deg;
+                    }
+                }
+            }
+        }
+        .buttons{
+            width: 13%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 11px;
+            #lang{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                background-color: transparent;
+                border: none;
+                p{
+                    font-size: 16px;
+                    color: black;
+                }
+            }
+            #login{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                background-color: #ff0037;
+                border-radius: 6px;
+                border: none;
+                color: white;
+                padding: 10px 24px;
+                font-weight: bold;
+            }
+        }
+    }
+    .bottom{
+        background-image: url(https://themeforest.kreativdev.com/bookapp/demo/assets/images/page-title-bg-1.png);
+        background-position: center;
+        height: 262px;
+        color: white;
+        font-weight: bold;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p{
+            width: 85%;
+        }
+        :first-child{
+            margin-bottom: 8px;
+            font-size: 48px;
+        }
+        :last-child{
+            a{
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .dropdown{
+        display: none;
+    }
+    .navbar{
+        .top{
+            justify-content: space-evenly;
+        }
+    }
+}

@@ -1,0 +1,92 @@
+.Contact{
+    @include row-center();
+    width: 100%;
+    .container{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        .header{
+            font-weight: bold;
+            text-decoration:underline;
+        }
+        .left{
+            width: 70%;
+            .top{
+                display: flex;
+                flex-direction: column;
+                .row{
+                    display: flex;
+                    gap: 5px;
+                    .name, .mail{
+                        width: 50%;
+                        margin-bottom: 7px;
+                        p{
+                            margin-bottom: 7px;
+                        }
+                        input{
+                            width: 100%;
+                        }
+                    }
+                }
+                .message{
+                    width: 100%;
+                    p{
+                        margin-bottom: 7px;
+                    }
+                    input{
+                        @extend p;
+                        height: 200px;
+                        width: 100%;
+                    }
+                }
+                button{
+                    padding: 10px;
+                    width: 100px;
+                    color: white;
+                    background-color: $blue;
+                    transition: all 0.4s;
+                    font-weight: bold;
+                    border: none;
+                }
+                button:hover{
+                    background-color: black;
+                }
+            }
+        }
+        .right{
+            width: 25%;
+            p{
+                padding-bottom: 10px;
+            }
+            div{
+                @extend p;
+                display: flex;
+                gap: 5px;
+                align-items: center !important;
+                p{
+                    padding: 0;
+                }
+                button{
+                    border: 1px solid $blue;
+                    background-color: transparent;
+                    border-radius: 50%;
+                    padding: 10px;
+                    svg{
+                        width: 14px;
+                        height: 14px;
+                        fill: $blue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .Contact{
+        .left, .right{
+            width: 100% !important;
+        }
+    }
+}

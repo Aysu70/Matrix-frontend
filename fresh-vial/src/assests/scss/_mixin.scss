@@ -1,0 +1,11 @@
+@mixin row-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin jc-sb-ac-c{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,45 @@
+.Home{
+    background-image: url('../photos/home/bg-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    @include row-center();
+    .container{
+        width: 85%;
+        .content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 45%;
+            text-align: center;
+            h1{
+                font-weight: bold;
+                color: $blue;
+                font-size: 36px;
+                margin-bottom: 10px;
+            }
+            p{
+                margin-bottom: 10px;
+            }
+            button{
+                width: 150px;
+                padding: 20px;
+                background-color: $blue;
+                color: white;
+                font-weight: bold;
+                border-radius: 50px;
+                border: 5px solid $btn-brd;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .Home .container{
+        width: 100%;
+        .content{
+            width: 100%;
+        }
+    }
+}
