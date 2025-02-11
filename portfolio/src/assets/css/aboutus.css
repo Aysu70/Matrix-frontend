@@ -1,0 +1,154 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    .name-surname{
+        display: flex;
+        align-content: center;
+        gap: 5px;
+        font-weight: bold;
+        span{
+            font-size: 24px;
+        }
+    }
+    .design{
+        font-size: 80px;
+        font-weight: bold;
+    }
+    .inspire{
+        font-size: 80px;
+        font-weight: bold;
+        padding-left: 60px;
+        span{
+            color: var(--bg-btn-bg1);
+            font-family: "DM Serif Text", serif;
+            font-style: italic;   
+            text-decoration: underline;     
+        }
+    }
+    .information{
+        display: flex;
+        flex-direction: column;
+        .row1{
+            width: 100%;
+            padding: 30px;
+            margin-bottom: 30px;            
+        }
+        .row2{
+            display: flex;
+            transition: all 0.4s;
+            gap: 16px;
+            .element{
+                width: 50%;
+                display: flex;
+                padding: 30px;
+                margin-bottom: 30px;
+            }
+        }
+        .row3{
+            display: flex;
+            transition: all 0.4s;
+            gap: 16px;
+            .element{
+                width: 50%;
+                display: flex;
+                padding: 30px;
+                margin-bottom: 30px;
+            }
+        }
+        .element{
+            bottom: 0;
+            transition: all 0.4s;
+            border-radius: 5px;
+        }
+        .element:hover{
+            position: relative;
+            bottom: 4px;
+            border: 1px solid var(--bg-btn-bg1);
+        }
+    }
+    .education{
+        display: flex;
+        width: 100%;
+        gap: 16px;
+        .work{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            p{
+                font-size: 32px;
+                font-weight: bold;
+            }
+            .element{
+                padding: 32px;
+                margin-bottom: 30px;
+                border-radius: 5px;
+                .desc{
+                    font-size: 16px;
+                }
+                .heading{
+                    font-size: 24px;
+                }
+            }
+            .stay{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                p{
+                    font-size: 24px;
+                }
+                ul{
+                    list-style: none;
+                    display: flex;
+                    gap: 5px;
+                    li{
+                        button{
+                            width: 50px;
+                            height: 50px;
+                            background-color: transparent;
+                            border-radius: 50%;
+                            transition: all 0.2s;
+                            svg{
+                                height: 24px;
+                                width: 24px;
+                            }
+                        }
+                        button:hover{
+                            background-color: var(--bg-btn-bg1);
+                            border: 1px solid var(--bg-btn-bg1);
+                        }
+                    }
+                }
+                
+            }
+        }
+        .education-experience{
+            p{
+                font-size: 32px;
+                font-weight: bold;
+            }
+            .element{
+                padding: 32px;
+                margin-bottom: 30px;
+                border-radius: 5px;
+                .desc{
+                    font-size: 16px;
+                }
+                .title{
+                    font-size: 24px;
+                }
+            }
+        }
+        .element:hover{
+            position: relative;
+            bottom: 4px;
+            border: 1px solid var(--bg-btn-bg1);
+        }
+        .element{
+            bottom: 0;
+            transition: all 0.4s;
+        }
+
+    }
+}

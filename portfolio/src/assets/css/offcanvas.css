@@ -1,0 +1,138 @@
+.offcanvas-container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    transition: all 0.4s;
+    overflow-y: scroll;
+    display: block;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    .offcanvas-elements{
+        width: 475px;
+        height: auto;
+        padding: 0 50px 50px 50px;
+        display: flex;
+        flex-direction: column;
+        .cancel{
+            width: 100% !important;
+            margin-top: 10px;
+            display: flex;
+            justify-content: end;
+            width: 60px;
+            height: 60px;
+            svg{
+                height: 45px;
+                width: 45px;
+            }
+        }
+        .logo{
+            width: 150px;
+            height: 52px;
+            a{
+                img{
+                    width: 150px;
+                    height: 52px;
+                }
+            }
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            li{
+                margin-top: 32px;
+                width: 100%;
+                a{
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+                a:hover{
+                    color: var(--bg-btn-bg1);
+                }
+            }
+        }
+        .contact-btn{
+            margin: 0px 24px;
+            button{
+                padding: 16px 20px;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                border-radius: 30px;
+                background-color: var(--bg-btn-bg1);
+                border: 1px solid transparent;
+                transition: all 0.4s;
+                span:nth-child(1){
+                    width: 250px;
+                }
+                span{
+                    font-weight: 550;
+                    font-size: 20px;
+                    color: var(--text-text-2);
+                    svg{
+                        margin-bottom: -2px;
+                    }
+                }
+            }
+        }
+        .social-links{
+            p{
+                font-size: 24px;
+                font-weight: 800;
+            }
+            ul{
+                display: flex;
+                flex-direction: row;
+                li{
+                    button{
+                        width: 48px;
+                        height: 48px;
+                        border-radius: 50%;
+                        transition: all 0.5s;
+                        svg{
+                            height: 20px;
+                            width: auto;
+                        }
+                    }
+                    button:hover{
+                        position: relative;
+                        top: -3px;
+                    }
+                }
+            }
+        }
+        .subscribe{
+            p{
+                font-size: 24px;
+                font-weight: 800;
+            }
+            form{
+                width: 100%;
+                position: relative;
+                input{
+                    padding: 20px;
+                    border-radius: 40px;
+                    width: 100%;
+                }
+                input::placeholder{
+                    font-weight: bold;
+                }
+                button{
+                    position: absolute;
+                    border-radius: 40px;
+                    z-index: 100;
+                    right: 4px;
+                    top: 4px;
+                    padding: 16px 20px;
+                    background-color: var(--bg-btn-bg1);
+                    border: 1px solid transparent;
+                    font-weight: bold;
+                    transition: all 0.4s;
+                }
+            }
+        }
+    }
+}

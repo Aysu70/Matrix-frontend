@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('colors.css');
+@import url('cursor.css');
+@import url('loading.css');
+@import url('theme.css');
+@import url('header.css');
+@import url('offcanvas.css');
+@import url('left.css');
+@import url('home.css');
+@import url('compose.css');
+@import url('aboutus.css');
+@import url('services.css');
+@import url('skills.css');
+@import url('portfolio.css');
+@import url('testimonial.css');
+@import url('blog.css');
+@import url('contact.css');
+@import url('scroll.css');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}

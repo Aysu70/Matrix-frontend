@@ -1,0 +1,22 @@
+#cursor-1{
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    border: var(--bg-btn-bg1) 2px solid;
+    border-radius: 100%;
+    pointer-events: none;
+    z-index: 9998;
+    transform: translate(-50%, -50%);
+    transition-duration: 0.2s;
+}
+.cursor-2{
+    position: fixed;
+    height: 10px;
+    width: 10px;
+    background-color: var(--bg-btn-bg1);
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    transition-duration: 0s;
+
+}

@@ -1,0 +1,924 @@
+body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 100%;
+    transition: all 0.4s;
+    #root{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+}
+.default-theme{
+    background-color: var(--bg-bg-1);
+    background-image: url('../photos/bg.png');
+    .scroll{
+        .progress{
+            svg path{
+                fill:rgb(255, 255, 255, 0.2);
+            }
+        }
+    }
+    .offcanvas-container{
+        background-color: var(--bg-bg-1);
+        border: 1px solid rgb(255, 255, 255, 0.2);
+        .offcanvas-elements{
+            .cancel{
+                svg{
+                    fill: white;
+                }
+            }
+            .logo{
+                a{
+                    .light-theme-logo{
+                        display: none;
+                    }
+                    .dark-theme-logo{
+                        display: block !important;
+                    }
+                }
+            }
+            .contact-btn{
+                button:hover{
+                    background-color: var(--bg-btn-bg3);
+                    border: 1px white solid;
+                }
+                button:hover span{
+                    color: white;
+                }
+                button:hover path:nth-child(2){
+                    fill: white;
+                }
+                button:hover path:nth-child(1){
+                    fill: rgb(255, 255, 255, 0.7);
+                }
+            }
+            ul li a{
+                color: white;
+            }
+            .social-links{
+                p{
+                    color: white;
+                }
+                ul{
+                    li{
+                        button{
+                            border: 1px solid rgb(255, 255, 255, 0.2);
+                            background-color: var(--bg-bg2);                          
+                            svg{
+                                fill: rgb(255, 255, 255);
+                            }
+                        }
+                    }
+                }
+            }
+            .subscribe{
+                p{
+                    color: rgb(255, 255, 255);
+                }
+                button:hover{
+                    background-color: var(--bg-btn-bg3);
+                    border: 1px white solid;
+                    color: rgb(255, 255, 255);
+                }
+                input{
+                    border: 1px solid rgb(255, 255, 255, 0.2);
+                    background-color: var(--bg-bg2);
+                }
+                input::placeholder{
+                    color: rgba(197, 195, 195, 0.8);
+                }
+            }
+        }
+    }
+    .nav-bar{
+        .nav-elements{
+            .logo{
+                a{
+                    .light-theme-logo{
+                        display: none ;
+                    }
+                    .dark-theme-logo{
+                        display: block;
+                    }
+                }
+            }
+            .btn-grp{
+                .contact-btn{
+                    button:hover{
+                        background-color: var(--bg-btn-bg3);
+                        border: 1px white solid;
+                    }
+                    button:hover span{
+                        color: white;
+                    }
+                    button:hover path:nth-child(2){
+                        fill: white;
+                    }
+                    button:hover path:nth-child(1){
+                        fill: rgb(255, 255, 255, 0.7);
+                    }
+                }
+                .switch-container{
+                    position: relative;
+                    .theme-toggle-switch{
+                        border: 1px solid rgb(255, 255, 255, 0.2);
+                        background-color: var(--bg-bg2);
+                    }   
+                    .theme-toggle-switch::before {
+                        background-color: var(--text-text-1);
+                        top: 4.5px;
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+                    }
+                }
+                .hamburger-menu{
+                    svg{
+                        path{
+                            stroke: white;
+                            fill: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .left-sidebar{
+        .left{
+            ul{
+                li{
+                    a{
+                        button:first-child{
+                            border: 1px solid rgb(255, 255, 255, 0.2);
+                            background-color: var(--bg-bg2);
+                        }
+                    }
+                    a:hover button:first-child path{
+                        fill: rgb(0, 0, 0);                      
+                    }
+                    .active button:first-child path{
+                        fill: black;
+                    }
+                }
+            }
+        }
+        .right{
+            border: 1px solid rgb(255, 255, 255, 0.2);
+            background-color: var(--bg-bg2);
+            .content{
+                h3{
+                    color: white;
+                }
+                p{
+                    color: rgb(204, 204, 204);
+                }
+                ul{
+                    li{
+                        button{
+                            border: 1px solid rgb(255, 255, 255);
+                            svg{
+                                path{
+                                    stroke: rgb(255, 255, 255);
+                                }
+                            }
+                            #face, #twitter{
+                                fill: rgb(255, 255, 255);
+                            }
+                        }
+                    }
+                }
+                .download:hover{
+                    background-color: transparent;
+                    border: 1px solid rgb(255, 255, 255);
+                }
+                .download:hover span{
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+    }
+    .home{
+        .name-surname{
+            span{
+                color: rgb(255, 254, 254);
+            }
+        }
+        .design{
+            color: rgb(255, 254, 254);
+        }
+        .inspire{
+            color: rgb(255, 254, 254);
+        }
+        .gateway{
+            color: rgb(255, 254, 254);
+        }
+        .circular{
+            .circle{
+                border: 2px solid rgb(255, 255, 255);
+                background: rgba(255, 255, 255, 0.1);
+                img{
+                    filter: brightness(1);
+                }         
+                svg path{
+                    fill: rgb(255, 255, 255);
+                }
+            }
+            .review{
+                span{
+                    color: white;
+                }
+            }
+        }
+        .work-together{
+            border: 1px solid rgb(255, 255, 255, 0.2);
+            /* background-color: var(--bg-bg2); */
+            background: rgba(255, 255, 255, 0.1);
+            background: linear-gradient(90deg, rgb(255, 255, 255, 0.1) 0%, rgb(255, 255, 255, 0.1) 100%);
+            color: white;
+            button{
+                border: 1px solid var(--bg-bg2);
+                background-color: var(--bg-bg2);
+                svg{
+                    fill: white;           
+                }    
+            }
+        }
+    }
+    .about{
+        .name-surname{
+            span{
+                color: rgb(255, 254, 254);
+            }
+        }
+        .design{
+            color: rgb(255, 254, 254);
+        }
+        .inspire{
+            color: rgb(255, 254, 254);
+        }
+        .information{
+            .element{
+                border: 1px solid rgb(255, 255, 255, 0.2);
+                background-color: var(--bg-bg2);
+                svg path{
+                    fill: white;
+                }
+                h4{
+                    color: white;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                p{
+                    color: white;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 25px;
+                }
+            }
+        }
+        .education{
+            p{
+                color: white;
+            }
+            .element{
+                border: 1px solid rgb(255, 255, 255, 0.2);
+                background-color: var(--bg-bg2);              
+            }
+            ul{
+                li{
+                    button{
+                        border: 1px solid rgb(255, 255, 255);
+                        svg{
+                            path{
+                                stroke: rgb(255, 255, 255);
+                            }
+                        }
+                        #face, #twitter{
+                            fill: rgb(255, 255, 255);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .services{
+        .name-surname{
+            span{
+                color: rgb(255, 254, 254);
+            }
+        }
+        .design{
+            color: rgb(255, 254, 254);
+        }
+        .inspire{
+            color: rgb(255, 254, 254);
+        }      
+        .element{
+            border: 1px solid rgb(255, 255, 255, 0.2);
+            background-color: var(--bg-bg2);  
+            p{
+                color: rgb(255, 255, 255);
+            }             
+            h4{
+                color: rgb(255, 255, 255);
+            }           
+        } 
+    }
+    .skills{
+        .name-surname{
+            span{
+                color: rgb(255, 254, 254);
+            }
+        }
+        .design{
+            color: rgb(255, 254, 254);
+        }
+        .inspire{
+            color: rgb(255, 254, 254);
+        } 
+        .row{
+            .element{
+                border: 1px solid rgb(255, 255, 255, 0.2);
+                background-color: var(--bg-bg2);  
+                p, span{
+                    color: rgb(255, 255, 255);
+                }  
+                button{
+                    background-color: rgb(255, 255, 255, 0.2);
+                }
+            }
+        }        
+    }
+    .portfolio{
+        .name-surname{
+            span{
+                color: rgb(255, 254, 254);
+            }
+        }
+        .design{
+            color: rgb(255, 254, 254);
+        }
+        .inspire{
+            color: rgb(255, 254, 254);
+        } 
+        .row .mywork p{
+            color: white;
+        }  
+        .row-m .mywork p{
+            color: white;
+        }              
+    }
+    .testimonail{
+        .name-surname{
+            span{
+                color: rgb(255, 254, 254);
+            }
+        }
+        .design{
+            color: rgb(255, 254, 254);
+        }
+        .inspire{
+            color: rgb(255, 254, 254);
+        } 
+        .row .review{
+            border: 1px solid rgb(255, 255, 255, 0.2);
+            background-color: var(--bg-bg2);  
+            p{
+                color: white;
+            }   
+            .top{
+                .right{
+                    svg path{
+                        fill: white;
+                    }
+                }
+            }      
+        }
+    }
+    .blog{
+        .name-surname{
+            span{
+                color: rgb(255, 254, 254);
+            }
+        }
+        .design{
+            color: rgb(255, 254, 254);
+        }
+        .inspire{
+            color: rgb(255, 254, 254);
+        }  
+        .row p{color: white;}      
+    }
+    .contact{
+        .name-surname{
+            span{
+                color: rgb(255, 254, 254);
+            }
+        }
+        .design{
+            color: rgb(255, 254, 254);
+        }
+        .inspire{
+            color: rgb(255, 254, 254);
+        }  
+        .form{
+            border: 1px solid rgb(255, 255, 255, 0.2);
+            background-color: var(--bg-bg2); 
+            h3{
+                color: white;
+            }
+            form{
+                button:hover{
+                    background-color: var(--bg-btn-bg3);
+                    border: 1px white solid;
+                }
+                button:hover span{
+                    color: white;
+                }
+                button:hover path:nth-child(2){
+                    fill: white;
+                }
+                button:hover path:nth-child(1){
+                    fill: rgb(255, 255, 255, 0.7);
+                }
+                input, textarea{
+                    border: 1px solid rgb(255, 255, 255, 0.2);
+                    background-color: var(--bg-bg2); 
+                }
+                input::placeholder, textarea::placeholder{
+                    color: white;
+                }
+            }
+        }
+        .bottom{
+            .logo{
+                a{
+                    .light-theme-logo{
+                        display: none;
+                    }
+                    .dark-theme-logo{
+                        display: block !important;
+                    }
+                }
+            }
+            p{color: white;}
+        }
+    }
+}
+.light-theme{
+    background-color: white;
+    background-image: url('../photos/bg2.png');
+    #loading{
+        background-color: white;
+    }
+    .scroll{
+        .progress{
+            svg path{
+                fill:rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+    .offcanvas-container{
+        background-color: white;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        .offcanvas-elements{
+            .cancel{
+                svg{
+                    fill: rgb(0, 0, 0);
+                }
+            }
+            .logo{
+                a{
+                    .light-theme-logo{
+                        display: block;
+                    }
+                    .dark-theme-logo{
+                        display: none !important;
+                    }
+                }
+            }
+            ul li a{
+                color: black;
+            }
+            .contact-btn{
+                button:hover{
+                    background-color: var(--bg-btn-bg3);
+                    border: 1px rgb(0, 0, 0) solid;
+                }
+                button:hover span{
+                    color: rgb(0, 0, 0);
+                }
+                button:hover path:nth-child(2){
+                    fill: rgb(0, 0, 0);
+                }
+                button:hover path:nth-child(1){
+                    fill: rgba(0, 0, 0, 0.7);
+                }
+            }
+            .social-links{
+                p{
+                    color: rgb(0, 0, 0);
+                }
+                ul{
+                    li{
+                        button{
+                            border: 1px solid rgba(0, 0, 0, 0.2);
+                            background-color: rgba(0, 0, 0, 0.1);                            
+                            svg{
+                                fill: black;
+                            }
+                        }
+                    }
+                }
+            }
+            .subscribe{
+                p{
+                    color: black;
+                }
+                button:hover{
+                    border: 1px solid rgba(0, 0, 0, 0.2);
+                    background-color: rgba(0, 0, 0, 0.1);
+                    color: rgb(0, 0, 0);
+                }
+                input{
+                    border: 1px solid rgba(0, 0, 0, 0.2);
+                    background-color: rgba(0, 0, 0, 0.1);
+                }
+                input::placeholder{
+                    color: rgba(0, 0, 0, 0.556);
+                }
+            }
+        }
+    }
+    .nav-bar{
+        .nav-elements{
+            .logo{
+                a{
+                    .light-theme-logo{
+                        display: block;
+                    }
+                    .dark-theme-logo{
+                        display: none !important;
+                    }
+                }
+            }
+            
+            .btn-grp{
+                .contact-btn{
+                    button:hover{
+                        background-color: var(--bg-btn-bg3);
+                        border: 1px rgb(0, 0, 0) solid;
+                    }
+                    button:hover span{
+                        color: rgb(0, 0, 0);
+                    }
+                    button:hover path:nth-child(2){
+                        fill: rgb(0, 0, 0);
+                    }
+                    button:hover path:nth-child(1){
+                        fill: rgba(0, 0, 0, 0.7);
+                    }
+                }
+                .switch-container{
+                    position: relative;
+                    .theme-toggle-switch{
+                        border: 1px solid rgba(0, 0, 0, 0.2);
+                        background-color: rgba(0, 0, 0, 0.1);
+                    }   
+                    .theme-toggle-switch::before {
+                        background-color: black;
+                        top: 4.5px;
+                        right: 32px;
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+                    }
+                }
+                .hamburger-menu{
+                    svg{
+                        path{
+                            stroke: black;
+                            fill: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .left-sidebar{
+        .left{
+            ul{
+                li{
+                    a{
+                        button:first-child{
+                            border: 1px solid rgba(0, 0, 0, 0.2);
+                            background-color: rgba(0, 0, 0, 0.1);
+                        }
+                    }
+                    button:first-child path{
+                        fill: rgb(0, 0, 0);                      
+                    }
+                }
+            }
+        }
+        .right{
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            background-color: rgba(0, 0, 0, 0.1);
+            .content{
+                h3{
+                    color: rgb(0, 0, 0);
+                }
+                p{
+                    color: rgb(0, 0, 0);
+                }
+                ul{
+                    li{
+                        button{
+                            border: 1px solid black;
+                            svg{
+                                path{
+                                    stroke: black;
+                                }
+                            }
+                            #face, #twitter{
+                                fill: rgb(0, 0, 0);
+                            }
+                        }
+                    }
+                }
+                .download:hover{
+                    background-color: transparent;
+                    border: 1px solid rgb(0, 0, 0);
+                }
+                .download:hover span{
+                    color: black;
+                }
+            }
+        }
+    }
+    .home{
+        .name-surname{
+            span{
+                color: black;
+            }
+        }
+        .design{
+            color: black;
+        }
+        .inspire{
+            color: black;
+        }
+        .gateway{
+            color: black;
+        }
+        .circular{
+            .circle{
+                border: 2px solid rgba(0, 0, 0);
+                img{
+                    filter: brightness(0);
+                }         
+                svg path{
+                    fill: black;
+                }
+            }
+            .review{
+                span{
+                    color: rgb(0, 0, 0);
+                }
+            }
+        }
+        .work-together{
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            background-color: rgba(0, 0, 0, 0.1);
+            color: rgb(0, 0, 0);
+            button{
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                background-color: rgba(0, 0, 0, 0.2);
+                svg{
+                    fill: rgb(0, 0, 0);           
+                }    
+            }
+        }
+    }
+    .about{
+        .name-surname{
+            span{
+                color: black;
+            }
+        }
+        .design{
+            color: black;
+        }
+        .inspire{
+            color: black;
+        }
+        .information{
+            .element{
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                background-color: rgba(0, 0, 0, 0.1);
+                svg path{
+                    fill: rgb(0, 0, 0);
+                }
+                h4{
+                    color: rgb(0, 0, 0);
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                p{
+                    color: rgb(0, 0, 0);
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 25px;
+                }
+            }
+        }
+        .education{
+            p{
+                color: black;
+            }
+            .element{
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                background-color: rgba(0, 0, 0, 0.1);               
+            }
+            ul{
+                li{
+                    button{
+                        border: 1px solid black;
+                        svg{
+                            path{
+                                stroke: black;
+                            }
+                        }
+                        #face, #twitter{
+                            fill: rgb(0, 0, 0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .services{      
+        .name-surname{
+            span{
+                color: black;
+            }
+        }
+        .design{
+            color: black;
+        }
+        .inspire{
+            color: black;
+        }
+        .element{
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            background-color: rgba(0, 0, 0, 0.1);   
+            p{
+                color: black;
+            }             
+            h4{
+                color: black;
+            }  
+        }
+    }
+    .skills{
+        .name-surname{
+            span{
+                color: black;
+            }
+        }
+        .design{
+            color: black;
+        }
+        .inspire{
+            color: black;
+        }
+        .row{
+            .element{
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                background-color: rgba(0, 0, 0, 0.1); 
+                p, span{
+                    color: black;
+                }  
+                button{
+                    background-color: rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+    }
+    .portfolio{
+        .name-surname{
+            span{
+                color: black;
+            }
+        }
+        .design{
+            color: black;
+        }
+        .inspire{
+            color: black;
+        }  
+        .row .mywork p{
+            color: rgb(0, 0, 0);
+        }  
+        .row-m .mywork p{
+            color: rgb(0, 0, 0);
+        }                   
+    }
+    .testimonail{
+        .name-surname{
+            span{
+                color: black;
+            }
+        }
+        .design{
+            color: black;
+        }
+        .inspire{
+            color: black;
+        }          
+        .row .review{
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            background-color: rgba(0, 0, 0, 0.027);    
+            p{
+                color: rgb(0, 0, 0);
+            }   
+            .top{
+                .right{
+                    svg path{
+                        fill: rgb(0, 0, 0);
+                    }
+                }
+            }       
+        }
+    }
+    .blog{
+        .name-surname{
+            span{
+                color: black;
+            }
+        }
+        .design{
+            color: black;
+        }
+        .inspire{
+            color: black;
+        }    
+        .row p{color: black;}
+    }
+    .contact{
+        .name-surname{
+            span{
+                color: rgb(0, 0, 0);
+            }
+        }
+        .design{
+            color: rgb(0, 0, 0);
+        }
+        .inspire{
+            color: rgb(0, 0, 0);
+        }  
+        .form{
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            background-color: rgba(0, 0, 0, 0.1); 
+            h3{
+                color: rgb(0, 0, 0);
+            }
+            form{
+                button:hover{
+                    background-color: var(--bg-btn-bg3);
+                    border: 1px rgb(0, 0, 0) solid;
+                }
+                button:hover span{
+                    color: rgb(0, 0, 0);
+                }
+                button:hover path:nth-child(2){
+                    fill: rgb(0, 0, 0);
+                }
+                button:hover path:nth-child(1){
+                    fill: rgba(0, 0, 0, 0.7);
+                }
+                input, textarea{
+                    border: 1px solid rgba(0, 0, 0, 0.2);
+                    background-color: rgba(0, 0, 0, 0.1); 
+                }
+                input::placeholder, textarea::placeholder{
+                    color: black;
+                }
+            }
+        }
+        .bottom{
+            .logo{
+                a{
+                    .light-theme-logo{
+                        display: block;
+                    }
+                    .dark-theme-logo{
+                        display: none !important;
+                    }
+                }
+            }
+            p{color: black;}
+        }
+    }
+}
