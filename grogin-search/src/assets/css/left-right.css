@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.middle-wrapper{
+    margin: 40px 0;
+    width: 100%;
+    .middle{
+        display: flex;
+        flex-direction: row;
+        margin: 0 5%;
+        .left{
+            position: sticky !important;
+            top: 0 !important;
+            width: 25%;
+            height: fit-content;
+            padding-right: 4%;
+            .filter-title{
+                font-weight: bold;
+                color: black;
+                font-size: larger;
+            }
+            div ul{
+                list-style: none;
+                padding: 0;
+                li{
+                    font-size: larger;
+                    label{
+                        margin-left: 7px;
+                        font-weight: 500;
+                    }
+                    input{
+                        width: 20px;
+                        height: 20px;
+                    }
+                    input:checked ~ label{
+                        color: #005CC8;
+                    }
+                }
+            }
+            .filter-rating{
+                .star-rating {
+                    display:flex;
+                    flex-direction: row-reverse;
+                    font-size:2em;
+                    justify-content:space-around;
+                    text-align:center;
+                    width:5em;
+                }
+                .star-rating input {
+                    display:none;
+                }
+                
+                .star-rating label {
+                    color:#ccc;
+                    cursor:pointer;
+                }
+                
+                .star-rating :checked ~ label {
+                    color:#f90;
+                }
+                
+                .star-rating label:hover,
+                .star-rating label:hover ~ label {
+                    color:#fc0;
+                }
+            }
+            .filter-price{
+                .range{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    .inputs{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+                        input{
+                            width: 45%;
+                            padding: 10px 5px;
+                            border-radius: 4px;
+                            border: solid lightgrey 1px;
+                        }
+                    }
+                    .bottom{
+                        button{
+                            padding: 7px 15px;
+                            border: none;
+                            background-color: #ccc;
+                            border-radius: 6px;
+                            transition: .3s;
+                            font-weight: bold;
+                        }
+                        button:hover{
+                            background-color: #afafaf;
+                        }
+                    }
+                }
+            }
+        }
+        .right{
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .banner{
+                width: 100% !important;
+                height: 20em;
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 25px;
+                .thisweek{
+                    padding: 3px;
+                    border-radius: 20px;
+                    font-size: small;
+                    color: rgb(147, 88, 1);
+                    background-color: rgb(255, 230, 128);
+                    width: 120px;
+                    text-align: center;
+                    margin-bottom: 10px;
+                }
+                h1{
+                    width: 50%;
+                    word-wrap: break-word;
+                }
+                p{
+                    color: #7d7d7d;
+                    width: 30%;
+                }
+                button{
+                    width: 10%;
+                    background-color:white;
+                    padding: 5px;
+                    border-radius: 20px;
+                    border: 1px solid lightgrey;
+                }
+            }
+            .search-result{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                background-color:#ebebeb;
+                align-items: center;
+                height: 4em;
+                border-radius: 5px;
+                padding: 15px;
+                .end{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 15px;
+                    p{margin-top: 15px;}
+                    .sorting{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 7px;
+                        select{
+                            border: none;
+                            background-color: #ebebeb;
+                            font-weight: bold;
+                        }
+                    }
+                    .showgrid{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 7px;
+                        button{
+                            border: none;
+                            border-radius: 7px;
+                            padding: 5px;
+                            margin-left: 5px;
+                            background-color: white;
+                        }
+                    }
+                }
+            }
+            .product-grid{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                flex-grow: 1;
+                flex-direction: row;
+                border-radius: 6px;
+                border: solid rgb(207, 207, 207) 1px;
+                .card-wrapper{
+                    width: 20%;
+                    padding: 15px;
+                    border: 1px solid grey;
+                }
+            }
+        }
+    }
+}
